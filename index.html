@@ -84,6 +84,27 @@
 .side-nav a:hover {
   text-decoration: underline;
 }
+
+.image-header {
+  background-image: url('profile.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-text {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0;
+  border-radius: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+}
 </style>
 </head>
 
@@ -95,14 +116,13 @@
     <a href="#social">Social</a>
   </nav>
 
-  <header>
-    <h1>Pradeep Ramalingam</h1>
+  
+<header class="image-header">
+  <div class="overlay-text">
+    <h1>pradeep</h1>
+  </div>
+</header>
 
-    <img src="profile.jpg" alt="Pradeep Ramalingam" style="max-width: 160px; margin-top: 1rem;" />
-
-
-    
-  </header>
 
   
     <section id="about">
