@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>pradeep</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -31,14 +31,22 @@
       font-size: 1.5rem;
       color: white;
     }
-    .top-right-nav {
+    .top-right-nav ul {
+      list-style: none;
+      padding: 0;
       margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .top-right-nav li {
+      margin: 0.3rem 0;
     }
     .top-right-nav a {
       color: white;
-      margin-left: 1rem;
       text-decoration: none;
-      font-weight: bold;
+      font-variant: small-caps;
+      font-size: 0.9rem;
     }
     .top-right-nav a:hover {
       text-decoration: underline;
@@ -78,10 +86,12 @@
     <div class="overlay-text">
       <h1>pradeep</h1>
       <nav class="top-right-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#social">Social</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#social">Social</a></li>
+        </ul>
       </nav>
     </div>
   </header>
