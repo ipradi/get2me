@@ -13,14 +13,19 @@
       background-color: #121212;
       color: #e0e0e0;
       line-height: 1.6;
+      padding-top: 500px;
     }
-    header {
-      background-image: url('profile.jpg');
-      background-size: cover;
-      background-position: center top;
-      height: 500px;
-      position: relative;
-    }
+ header {
+  background-image: url('profile.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: 500px;
+  position: fixed;       
+  top: 0;                
+  left: 0;               
+  width: 100%;           
+  z-index: 1000;         
+}
     .overlay-text {
       position: absolute;
       top: 1rem;
