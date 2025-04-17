@@ -93,6 +93,27 @@
    .icons a:hover {
   color: #e64a19;
     }
+    .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-item i {
+  color: #FF5722;
+  min-width: 20px;
+}
+
+.contact-item a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -157,11 +178,20 @@
   </section>
 
   <section id="contact">
-    <h2>contact</h2>
-    <p>email: <a href="mailto:pradeep.ramalingam@icloud.com" style="color: #FF5722;">pradeep.ramalingam@icloud.com</a></p>
-    <p>phone: <a href="+1 251 209 9640" style="color: #FF5722;">+1 251 209 9640</a></p>
-    <p>location: Chicago, IL</p>
-  </section>
+  <h2>contact</h2>
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:pradeep.ramalingam@icloud.com">pradeep.ramalingam@icloud.com</a>
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-phone"></i>
+    <a href="tel:+12512099640">+1 251 209 9640</a>
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <a href="https://www.google.com/maps/place/Chicago,+IL" target="_blank">Chicago, IL</a>
+  </div>
+</section>
 
  <section id="social">
   <h2>social</h2>
